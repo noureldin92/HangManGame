@@ -10,4 +10,5 @@
 body {
   background-image: url("../assets/download.jpeg");
   background-size: cover;
+  background-repeat: no-repeat;
 }

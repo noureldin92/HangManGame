@@ -22,8 +22,9 @@ export default function Home() {
     gameOver && navigate("/gameOver");
   }, [gameOver, length, navigate, array.length, mainLength]);
   return (
-    <main className="flex flex-col space-y-6">
+    <main className="flex flex-col space-y-6 h-screen">
       <MainWord />
+
       {length !== mainLength && <Attemps />}
       <Charachters />
     </main>
