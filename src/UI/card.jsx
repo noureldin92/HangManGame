@@ -12,7 +12,7 @@ export default function Card({
   trimmed,
 }) {
   return (
-    <main className="w-full h-screen mx-auto md:w-3/4   flex justify-center space-y-10 items-center flex-col bg-gray-200/50 md:rounded-full  ">
+    <main className="w-full h-screen mx-auto md:w-3/4   flex justify-center space-y-10 items-center flex-col bg-gray-200/40 md:rounded-full  ">
       <h1 className="text-4xl text-red-600">{emo}</h1>
       <h1 className="text-5xl md:text-7xl font-[1000] text-red-600 ">
         {" "}

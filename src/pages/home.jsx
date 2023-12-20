@@ -23,7 +23,7 @@ export default function Home() {
     }
   }, [length, navigate, array.length, mainLength, attemps]);
   return (
-    <main className="flex flex-col mt-20 space-y-6 ">
+    <main className="flex flex-col space-y-16 translate-y-10 ">
       <MainWord />
       {length !== mainLength && <Attemps />}
       <Charachters />
