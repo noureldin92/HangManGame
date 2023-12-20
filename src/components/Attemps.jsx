@@ -3,11 +3,20 @@ export default function Attemps() {
   let { attemps, alert } = useSelector((state) => state.gameOverSlice);
   return (
     <>
-      <div className=" bg-white  w-fit mx-auto  rounded-md flex justify-between items-center p-1">
-        <p className="text-orange-600 "> Attepms : </p>
+      <div className="mx-auto flex justify-between items-center w-fit space-x-1">
+        <p className="text-white text-sm uppercase font-mono w-18 font-bold">
+          {" "}
+          attemps{" "}
+        </p>
         <h3
-          className={`text-xs sm:text-lg font-bold ps-1 ${
-            alert ? "text-red-600 animate-bounce" : " text-orange-600"
+          className={`  font-mono font-extrabold animate-bounce  w-2  ${
+            alert
+              ? "text-red-600 animate-bounce sm:text-xl"
+              : "text-white  sm:text-lg"
+          }${
+            attemps <= 1
+              ? "animate-bounce sm:text-xl text-red-600"
+              : "text-white  sm:text-lg"
           }`}>
           {attemps}
         </h3>
