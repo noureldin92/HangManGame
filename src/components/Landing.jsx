@@ -6,7 +6,7 @@ export default function Landing() {
       <h1 className="text-4xl font-extrbold font-[1000] text-center text-orange-600">
         Welcome To HangMan Challenge
       </h1>
-      <p className="text-center text-white font-light sm:w-3/5 md:w-3/4">
+      <p className="text-center text-black font-light sm:w-3/5 md:w-3/4">
         popular word guessing game where you attempts to build a missing word by
         guessing one letter at a time
       </p>
