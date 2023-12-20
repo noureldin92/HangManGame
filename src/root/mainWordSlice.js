@@ -11,6 +11,7 @@ let initialState = {
   char: [],
   length: 0,
   ctg: ctg,
+ 
 };
 
 let mainWordSlice = createSlice({
@@ -39,6 +40,7 @@ let mainWordSlice = createSlice({
       let founded = state.ctg.find((sliceCtg) => {
         return sliceCtg.ctg === action.payload;
       });
+      
       state.array = [
         ...founded.items[
           Math.floor(Math.random() * founded.items.length)

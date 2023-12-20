@@ -1,20 +1,20 @@
+/* eslint-disable no-dupe-else-if */
 import { createSlice } from "@reduxjs/toolkit";
 
 let gameOverSlice = createSlice({
   name: "gameOver",
-  initialState: { gameOver: false, count: 0, attemps: 15 },
+  initialState: { attemps: 15, alert: false },
   reducers: {
     wrongTurn(state) {
-      state.count++;
       state.attemps--;
-      if (state.count === 16) {
-        state.gameOver = true;
+
+      if (state.attemps <= 5) {
+        state.alert = true;
       }
     },
     reset(state) {
-      state.gameOver = false;
-      state.count = 0;
       state.attemps = 15;
+      state.alert = false;
     },
   },
 });

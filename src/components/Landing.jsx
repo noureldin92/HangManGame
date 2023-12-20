@@ -2,8 +2,8 @@ import { Link } from "react-router-dom";
 
 export default function Landing() {
   return (
-    <main className="h-screen my-[-32px]  bg-white rounded-full flex justify-center flex-col items-center  border-orange-600 w-3/4 mx-auto">
-      <h1 className="text-4xl font-extrabold text-center text-orange-600">
+    <main className=" p-3 md:w-3/4 min-h-[100vh] mx-auto   flex justify-center space-y-10 items-center flex-col bg-gray-200/50 md:rounded-full ">
+      <h1 className="text-4xl font-extrbold font-[1000] text-center text-orange-600">
         Welcome To HangMan Challenge
       </h1>
       <p className="mt-12">

@@ -8,7 +8,14 @@
 }
 
 body {
-  background-image: url("../assets/download.jpeg");
+  background-image: url("../assets/mobile.jpg");
+  min-height: 88.8vh;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+}
+
+@media (min-width: 768px) {
+  body {
+    background-image: url("../assets/pc.jpg");
+  }
 }

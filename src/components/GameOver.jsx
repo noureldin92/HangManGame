@@ -1,4 +1,3 @@
-
 import { useDispatch, useSelector } from "react-redux";
 import { mainWordActions } from "../root/mainWordSlice";
 import { gameOverActions } from "../root/gameOverSlice";
@@ -12,7 +11,6 @@ export default function GameOver() {
     categories[
       Math.floor(Math.random() * categories.length)
     ].toLocaleUpperCase();
-  console.log(word);
 
   let dispatch = useDispatch();
   function gameOver() {

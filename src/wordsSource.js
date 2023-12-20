@@ -24,6 +24,11 @@ export let categories = [
   "foot ball",
   "hooky",
   "hand ball",
+  "cairo",
+  "dubai",
+  "ghaza",
+  "canada",
+  "barcelona",
 ];
 
 export let ctg = [
@@ -44,6 +49,17 @@ export let ctg = [
       "adm",
     ],
   },
-  { ctg: "cities", items: ["tanta", "alexandria", "sudia"] },
-  { ctg: "sports", items: ["foot ball", "hooky", "hand ball"] },
+  {
+    ctg: "countries",
+    items: [
+      "tanta",
+      "alexandria",
+      "cairo",
+      "dubai",
+      "ghaza",
+      "canada",
+      "barcelona",
+    ],
+  },
+  { ctg: "sports", items: ["football", "hooky", "handball", "swimming"] },
 ];
