@@ -6,20 +6,21 @@ import Card from "../UI/card";
 export default function GameOver() {
   let { array } = useSelector((state) => state.mainWordSlice);
   let missedchars = useSelector((state) => state.mainWordSlice.char);
-
+  let dispatch = useDispatch();
   let word =
     categories[
       Math.floor(Math.random() * categories.length)
     ].toLocaleUpperCase();
-
-  let dispatch = useDispatch();
+  ///
+  
   function gameOver() {
     dispatch(gameOverActions.reset());
     let getItem = sessionStorage.getItem("ctg");
-    if (sessionStorage.getItem("ctg")) {
+    if (getItem) {
       dispatch(mainWordActions.chooseCtg(getItem));
     } else dispatch(mainWordActions.PlayAgain(word));
   }
+  ///
   return (
     <>
       <Card

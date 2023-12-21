@@ -11,14 +11,13 @@ let initialState = {
   char: [],
   length: 0,
   ctg: ctg,
- 
 };
 
 let mainWordSlice = createSlice({
   name: "mainWord",
   initialState: initialState,
   reducers: {
-    chartCheck(state, action) {
+    charCheck(state, action) {
       state.array.map((char) => {
         if (action.payload.char === char) {
           state.char.push(action.payload);
@@ -40,7 +39,7 @@ let mainWordSlice = createSlice({
       let founded = state.ctg.find((sliceCtg) => {
         return sliceCtg.ctg === action.payload;
       });
-      
+
       state.array = [
         ...founded.items[
           Math.floor(Math.random() * founded.items.length)
